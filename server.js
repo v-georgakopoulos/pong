@@ -10,12 +10,12 @@ const httpServer = http.createServer(apiServer);
 
 const socketServer = require('socket.io')(httpServer, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3001",
     methods: ["GET", "POST"]
   }
 });
 
-const PORT = 3000;
+const PORT = 3001;
 
 sockets.listen(socketServer);
 
